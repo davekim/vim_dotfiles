@@ -62,8 +62,12 @@ if version >= 703
 endif
 set undolevels=1000 "maximum number of changes that can be undone
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 " Color
-colorscheme vibrantink
+colorscheme gruvbox
 
 augroup Drakefile
   au!
